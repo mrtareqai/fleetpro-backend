@@ -1,11 +1,11 @@
 import dotenv from 'dotenv'
 import path from 'path'
 
-// 1. تحميل .env الأساسي أولاً كقاعدة (يحتوي على DATABASE_URL)
+// 1. تحميل .env الأساسي (إذا وجد) دون الكتابة فوق المتغيرات الموجودة فعلياً في النظام
 dotenv.config({ path: path.resolve(__dirname, '../.env') })
-// 2. تحميل ملف البيئة المخصص ليطغى على القيم الأساسية
+// 2. تحميل ملف البيئة المخصص (dev أو production)
 const envFile = process.env.NODE_ENV === 'production' ? '.env.production' : '.env.dev'
-dotenv.config({ path: path.resolve(__dirname, `../${envFile}`), override: true })
+dotenv.config({ path: path.resolve(__dirname, `../${envFile}`) })
 
 import express, { Request, Response } from 'express'
 import cors from 'cors'
