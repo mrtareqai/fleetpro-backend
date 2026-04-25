@@ -446,7 +446,7 @@ export const updateRole = async (req: Request, res: Response) => {
   const { id } = req.params
   const { name, nameAr, permissions } = req.body
   const role = await prisma.appRole.updateMany({
-    where: { id, tenantId },
+    where: { id: id as string, tenantId },
     data: { name, nameAr, permissions }
   })
   res.json(role)
@@ -455,7 +455,7 @@ export const updateRole = async (req: Request, res: Response) => {
 export const deleteRole = async (req: Request, res: Response) => {
   const tenantId = req.user!.tenantId!
   const { id } = req.params
-  await prisma.appRole.deleteMany({ where: { id, tenantId } })
+  await prisma.appRole.deleteMany({ where: { id: id as string, tenantId } })
   res.json({ success: true })
 }
 
@@ -517,7 +517,7 @@ export const updateUser = async (req: Request, res: Response) => {
   }
 
   const user = await prisma.appUser.updateMany({
-    where: { id, tenantId },
+    where: { id: id as string, tenantId },
     data
   })
   res.json(user)
@@ -526,6 +526,6 @@ export const updateUser = async (req: Request, res: Response) => {
 export const deleteUser = async (req: Request, res: Response) => {
   const tenantId = req.user!.tenantId!
   const { id } = req.params
-  await prisma.appUser.deleteMany({ where: { id, tenantId } })
+  await prisma.appUser.deleteMany({ where: { id: id as string, tenantId } })
   res.json({ success: true })
 }

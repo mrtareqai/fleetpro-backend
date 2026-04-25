@@ -86,7 +86,7 @@ export const checkTenant = async (req: Request, res: Response) => {
   }
 
   const tenant = await prisma.tenant.findUnique({
-    where: { serverId }
+    where: { serverId: serverId as string }
   })
 
   if (!tenant) {
