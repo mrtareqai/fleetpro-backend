@@ -1,0 +1,42 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:check": "node db-check.js",
+    "dev": "cross-env NODE_ENV=development npx ts-node --transpile-only src/index.ts",
+    "db:migrate": "cross-env NODE_ENV=development npx prisma migrate deploy",
+    "build": "tsc",
+    "start": "cross-env NODE_ENV=production node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.6.0",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "prisma": {
+    "seed": "npx ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "cors": "^2.8.6",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
+    "dotenv-cli": "^11.0.0",
+    "express": "^5.2.1",
+    "express-async-handler": "^1.2.0",
+    "express-rate-limit": "^8.4.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.22.2",
+    "zod": "^4.3.6"
+  }
+}

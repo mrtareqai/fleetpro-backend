@@ -1,0 +1,28 @@
+﻿Analyzing fleet_pro...                                          
+
+warning - Unused import: 'package:intl/intl.dart' - lib\features\drivers\presentation\screens\drivers_screen.dart:3:8 - unused_import
+  error - The argument type 'int' can't be assigned to the parameter type 'String'.  - lib\features\drivers\presentation\screens\drivers_screen.dart:74:53 - argument_type_not_assignable
+   info - Unnecessary use of multiple underscores - lib\features\drivers\presentation\screens\drivers_screen.dart:141:29 - unnecessary_underscores
+warning - The value of the local variable 'dateFormat' isn't used - lib\features\fleet\presentation\screens\fleet_screen.dart:28:11 - unused_local_variable
+  error - The name 'dateFormat' is already defined - lib\features\fleet\presentation\screens\fleet_screen.dart:28:11 - duplicate_definition
+   info - Unnecessary use of multiple underscores - lib\features\fleet\presentation\screens\fleet_screen.dart:273:29 - unnecessary_underscores
+  error - The method 'contains' isn't defined for the type 'int' - lib\features\reservations\presentation\screens\reservations_screen.dart:36:16 - undefined_method
+  error - The argument type 'int' can't be assigned to the parameter type 'String'.  - lib\features\reservations\presentation\screens\reservations_screen.dart:82:53 - argument_type_not_assignable
+  error - The getter 'date' isn't defined for the type 'Reservation' - lib\features\reservations\presentation\screens\reservations_screen.dart:84:73 - undefined_getter
+  error - The getter 'trip' isn't defined for the type 'Reservation' - lib\features\reservations\presentation\screens\reservations_screen.dart:85:55 - undefined_getter
+   info - Unnecessary use of multiple underscores - lib\features\reservations\presentation\screens\reservations_screen.dart:204:29 - unnecessary_underscores
+  error - The argument type 'int' can't be assigned to the parameter type 'String'.  - lib\features\reservations\presentation\screens\reservations_screen.dart:228:32 - argument_type_not_assignable
+  error - The getter 'trip' isn't defined for the type 'Reservation' - lib\features\reservations\presentation\screens\reservations_screen.dart:229:60 - undefined_getter
+  error - The getter 'date' isn't defined for the type 'Reservation' - lib\features\reservations\presentation\screens\reservations_screen.dart:230:74 - undefined_getter
+   info - Unnecessary use of multiple underscores - lib\features\tickets\presentation\screens\tickets_screen.dart:204:29 - unnecessary_underscores
+  error - The getter 'contact' isn't defined for the type 'Tenant' - lib\features\topowner\presentation\screens\companies_screen.dart:105:55 - undefined_getter
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\topowner\presentation\screens\companies_screen.dart:114:47 - deprecated_member_use
+   info - Unnecessary use of multiple underscores - lib\features\topowner\presentation\screens\companies_screen.dart:140:29 - unnecessary_underscores
+  error - The getter 'contact' isn't defined for the type 'Tenant' - lib\features\topowner\presentation\screens\companies_screen.dart:162:63 - undefined_getter
+   info - 'activeColor' is deprecated and shouldn't be used. Use activeThumbColor instead. This feature was deprecated after v3.31.0-2.0.pre - lib\features\topowner\presentation\screens\companies_screen.dart:171:21 - deprecated_member_use
+  error - The named parameter 'ownerName' is required, but there's no corresponding argument - lib\features\topowner\presentation\screens\companies_screen.dart:248:40 - missing_required_argument
+  error - The named parameter 'phone' is required, but there's no corresponding argument - lib\features\topowner\presentation\screens\companies_screen.dart:248:40 - missing_required_argument
+  error - The named parameter 'logoUrl' isn't defined - lib\features\topowner\presentation\screens\companies_screen.dart:253:23 - undefined_named_parameter
+  error - The named parameter 'contact' isn't defined - lib\features\topowner\presentation\screens\companies_screen.dart:254:23 - undefined_named_parameter
+   info - Unnecessary use of multiple underscores - lib\features\users\presentation\screens\users_screen.dart:111:29 - unnecessary_underscores
+
