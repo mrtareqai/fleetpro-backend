@@ -8,7 +8,7 @@
     "db:check": "node db-check.js",
     "dev": "cross-env NODE_ENV=development npx ts-node --transpile-only src/index.ts",
     "db:migrate": "cross-env NODE_ENV=development npx prisma migrate deploy",
-    "build": "npx prisma generate && npx prisma db push && tsc",
+    "build": "npx prisma generate && npx prisma db push && npx prisma db seed && tsc",
     "start": "cross-env NODE_ENV=production node dist/index.js"
   },
   "keywords": [],
